@@ -1,8 +1,127 @@
 *{
-      
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bitter', serif;
+}
+
+body{
+  height: 100vh;
+  overflow: hidden;
+  background: #614385;  
+  background: -webkit-linear-gradient(to right, #516395, #614385);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
 }
 
 .container{
-  border: 1px solid black;
+  display: none;
+  height: 20rem;
+  width: 35rem;
+}
+
+#choose{
+  display: block;
+}
+
+#box{
+  background-color: white;
+  border-radius: 2rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40rem;
+}
+
+#box form{
+  padding-bottom: 45px;
+}
+.card{
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+
+}
+
+#box form select{
+  width: 40px;
+  padding:  0px 5px;
+  font-size: 14px;
+}
+
+.flip{
+  cursor: pointer;  
+  transform: rotateY(180deg);
+}
+
+.front, .back{
   padding: 2em;
+  border: 1px solid black;
+  border-radius: 2rem;
+ 
+  font-family: 'Bitter', serif;
+
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  background-color: white;
+
+  text-align: right;
+}
+
+#verse{
+  padding: 20px;
+  font-family: 'Bitter', serif;
+  font-size: 22px;
+}
+
+label{
+  padding-right: 5px;
+}
+
+#skyBlue{
+  border: none;
+  background-color: deepskyblue;
+  padding: 10px;
+  margin-right: 14vw;
+  font: serif;
+  text-align: center;
+}
+.back{
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+audio {
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    width: 400px;
+    height: 25px;
+}
+
+&::-webkit-media-controls-enclosure {
+    border-radius: 5px;
+    background-color: green;
+}
+
+#chosen{
+  background-color: deepskyblue;
+  text-align: center;
+  font: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  width: 10em;
+  margin-top: 1rem;
+  cursor: pointer;
+
 }
