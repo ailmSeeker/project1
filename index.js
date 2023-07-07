@@ -14,7 +14,9 @@ function setUpFlashCard(letter){
   let errorCheck = false;
  
   console.log(letter)
+  
   //unhiding the flashcard to show it
+
   show.style.display = 'block'
   check.innerText = 'Check'
   check.id = 'skyBlue'
@@ -74,18 +76,21 @@ function feed(h3, audio, verse){
 }
 
 function updateFlashCard(div, verse){
-  fetch(`http://api.alquran.cloud/v1/ayah/${verse}/ar.muyassar`).then((resp) => {
+  fetch(`http://api.alquran.cloud/v1/ayah/${verse}/ar.husarymujawwad`).then((resp) => {
       return resp.json()
   }).then((res) => {
       div.innerText = res.data.text
+      console.log('flash verse ' + res.data.text)
   })
 }
 
 function updateAudio(div, verse){
+  console.log('audio verse ' + verse)
   fetch(`http://api.alquran.cloud/v1/ayah/${verse}/ar.husarymujawwad`).then(res => {
       return res.json()
   }).then(resp => {
       div.src = resp.data.audio;
+      console.log('audio verse ' + resp.data.text)
       document.querySelector('.back').appendChild(div);
     });
 }
