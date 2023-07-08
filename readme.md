@@ -18,3 +18,6 @@
    
 ### The API
 http://api.alquran.cloud/v1/quran/en.asad
+https://api.quran.com/api/
+https://api.alquran.cloud/v1/
+https://api.alquran.cloud/v1/ayah/
