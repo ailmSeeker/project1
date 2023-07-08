@@ -17,7 +17,5 @@
 4. You will get a recording with one of the best reciters in the world giving you the correct pronuncation ![Image Three](https://github.com/ailmSeeker/project1/blob/main/images/3.png)
    
 ### The API
-http://api.alquran.cloud/v1/quran/en.asad
-https://api.quran.com/api/
-https://api.alquran.cloud/v1/
-https://api.alquran.cloud/v1/ayah/
+- https://api.quran.com/api/v4/
+- https://api.alquran.cloud/v1/
