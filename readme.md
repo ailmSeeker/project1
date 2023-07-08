@@ -12,6 +12,7 @@
 
 ### How To Use The Learn Tajweed App
 1. First you select the letter that you would like to work on.
+2. ![Image One](https://github.com/ailmSeeker/project1/blob/main/images/1.png)
 3. After that you will get a verse with that letter in it
 4. After you have tried to pronunce the approperate word
 5. You will get a recording with one of the best reciters in the world giving you the correct pronuncation
