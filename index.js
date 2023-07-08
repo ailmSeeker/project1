@@ -52,7 +52,7 @@ function choose() {
     let valueOfChoose = document.querySelector("#letter").value;
     let search = mapForSearch(valueOfChoose);
 
-    fetch(`https://api.quran.com/api/v4/search?q=${search}&size=1&page=0`)
+    fetch(`//api.quran.com/api/v4/search?q=${search}&size=1&page=0`)
       .then((res) => {
         return res.json();
       })
@@ -76,7 +76,7 @@ function feed(h3, audio, verse){
 }
 
 function updateFlashCard(div, verse){
-  fetch(`http://api.alquran.cloud/v1/ayah/${verse}/ar.husarymujawwad`).then((resp) => {
+  fetch(`//api.alquran.cloud/v1/ayah/${verse}/ar.husarymujawwad`).then((resp) => {
       return resp.json()
   }).then((res) => {
       div.innerText = res.data.text
@@ -86,7 +86,7 @@ function updateFlashCard(div, verse){
 
 function updateAudio(div, verse){
   console.log('audio verse ' + verse)
-  fetch(`http://api.alquran.cloud/v1/ayah/${verse}/ar.husarymujawwad`).then(res => {
+  fetch(`//api.alquran.cloud/v1/ayah/${verse}/ar.husarymujawwad`).then(res => {
       return res.json()
   }).then(resp => {
       div.src = resp.data.audio;
